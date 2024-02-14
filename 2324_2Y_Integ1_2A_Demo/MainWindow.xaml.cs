@@ -49,6 +49,8 @@ namespace _2324_2Y_Integ1_2A_Demo
             btnMult.Content = "x";
             btnDiv.Content = "/";
             btnEnter.Content = "=";
+            btnClear.Content = "C";
+            btnBackspace.Content = "<";
         }
 
         private void numberEnter(int x)
@@ -178,6 +180,31 @@ namespace _2324_2Y_Integ1_2A_Demo
                 ope = -1;
                 num2 = 0;
             }
+            
+                
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            tbCalc.Text = "";
+        }
+
+        private void btnBackspace_Click(object sender, RoutedEventArgs e)
+        {
+            if (tbCalc.Text.Length > 0)
+            {
+                tbCalc.Text = tbCalc.Text.Substring(0, tbCalc.Text.Length - 1);
+            }
+        }
+
+        private void tbCalc_Display_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //tbCalc_Display.Text = $"{num1}{ope}{num2}";
+        }
+
+        private void tbCalc_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            tbCalc_Display.Text = $"{num1}{ope}{num2}";
         }
     }
 }
