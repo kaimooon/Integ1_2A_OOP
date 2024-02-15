@@ -58,13 +58,19 @@ namespace _2324_2Y_Integ1_2A_Demo
             string input = tbCalc.Text;
             input += x;
 
-            if(input.Length > 5 )
+            if (input.Length > 5)
                 input = input.Substring(1);
 
             if (ope == -1)
+            {
                 num1 = int.Parse(input);
+                tbCalc_Display.Text = input;
+            }
             else
+            {
                 num2 = int.Parse(input);
+                tbCalc_Display.Text = $"{num1} {GetOperationSymbol(ope)} {input}";
+            }
 
             tbCalc.Text = input;
         }
@@ -153,12 +159,12 @@ namespace _2324_2Y_Integ1_2A_Demo
         {
             ope = 3;
             tbCalc.Text = "";
-        } 
+        }
         #endregion
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
         {
-            switch(ope)
+            switch (ope)
             {
                 case 0:
                     num1 += num2;
@@ -173,20 +179,21 @@ namespace _2324_2Y_Integ1_2A_Demo
                     num1 /= num2;
                     break;
             }
-            
-            if(ope > -1)
+
+            if (ope > -1)
             {
                 tbCalc.Text = num1.ToString();
                 ope = -1;
                 num2 = 0;
             }
-            
-                
+
+
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             tbCalc.Text = "";
+            tbCalc_Display.Text = "";
         }
 
         private void btnBackspace_Click(object sender, RoutedEventArgs e)
@@ -198,13 +205,32 @@ namespace _2324_2Y_Integ1_2A_Demo
         }
 
         private void tbCalc_Display_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //tbCalc_Display.Text = $"{num1}{ope}{num2}";
+        {           
+            if (ope == -1)
+            {
+                tbCalc_Display.Text = $"{num1}";
+            }
+            else
+            {
+                tbCalc_Display.Text = $"{num1} {GetOperationSymbol(ope)} {num2}";
+            }
         }
 
-        private void tbCalc_TextChanged(object sender, TextChangedEventArgs e)
+        private string GetOperationSymbol(int operation)
         {
-            tbCalc_Display.Text = $"{num1}{ope}{num2}";
+            switch (operation)
+            {
+                case 0:
+                    return "+";
+                case 1:
+                    return "-";
+                case 2:
+                    return "x";
+                case 3:
+                    return "/";
+                default:
+                    return "";
+            }
         }
     }
 }

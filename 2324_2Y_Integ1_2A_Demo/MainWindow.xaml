@@ -5,46 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2324_2Y_Integ1_2A_Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="349" Width="637">
+    <Grid Margin="10,0,0,0" HorizontalAlignment="Left" Width="666" Height="313" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
         <Button x:Name="btn9" Content="X" HorizontalAlignment="Left" Margin="28,78,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click"/>
+        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn9_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn8" Content="X" HorizontalAlignment="Left" Margin="83,78,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn8_Click"/>
+        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn8_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn7" Content="X" HorizontalAlignment="Left" Margin="138,78,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn7_Click"/>
+        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn7_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn6" Content="X" HorizontalAlignment="Left" Margin="28,133,0,0" VerticalAlignment="Top" 
-        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn6_Click"/>
+        Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn6_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn5" Content="X" HorizontalAlignment="Left" Margin="83,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn5_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn5_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn4" Content="X" HorizontalAlignment="Left" Margin="138,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn4_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn4_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn3" Content="X" HorizontalAlignment="Left" Margin="28,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn3_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn3_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn2" Content="X" HorizontalAlignment="Left" Margin="83,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn2_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn2_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn1" Content="X" HorizontalAlignment="Left" Margin="138,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn1_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn1_Click" Background="#FFF57B7B"/>
         <Button x:Name="btn0" Content="X" HorizontalAlignment="Left" Margin="83,243,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn0_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btn0_Click" Background="#FFF57B7B"/>
         <Button x:Name="btnAdd" Content="X" HorizontalAlignment="Left" Margin="193,78,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnAdd_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnAdd_Click" Background="#FFF57B7B"/>
         <Button x:Name="btnMin" Content="X" HorizontalAlignment="Left" Margin="193,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMin_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMin_Click" Background="#FFF57B7B"/>
         <Button x:Name="btnMult" Content="X" HorizontalAlignment="Left" Margin="193,188,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMult_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnMult_Click" Background="#FFF57B7B"/>
         <Button x:Name="btnDiv" Content="X" HorizontalAlignment="Left" Margin="193,243,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnDiv_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnDiv_Click" Background="#FFF57B7B"/>
         <Button x:Name="btnEnter" Content="X" HorizontalAlignment="Left" Margin="138,243,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnEnter_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnEnter_Click" Background="#FFF57B7B"/>
         <TextBox x:Name="tbCalc" HorizontalAlignment="Left" Margin="28,22,0,0" TextWrapping="Wrap" Text="" 
-                 VerticalAlignment="Top" Width="270" FontSize="28" IsEnabled="False" HorizontalContentAlignment="Right" TextChanged="tbCalc_TextChanged"/>
+                 VerticalAlignment="Top" Width="270" FontSize="28" IsEnabled="False" HorizontalContentAlignment="Right" Background="#FFB9E5ED" Height="39"/>
         <Button x:Name="btnClear" Content="X" HorizontalAlignment="Left" Margin="248,78,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnClear_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnClear_Click" Background="#FFF57B7B"/>
         <Button x:Name="btnBackspace" Content="X" HorizontalAlignment="Left" Margin="248,133,0,0" VerticalAlignment="Top" 
-            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnBackspace_Click"/>
+            Width="50" Height="50" FontSize="28" FontWeight="Bold" Click="btnBackspace_Click" Background="#FFF57B7B"/>
         <TextBox x:Name="tbCalc_Display" HorizontalAlignment="Left" Margin="320,22,0,0" TextWrapping="Wrap" Text="" 
-            VerticalAlignment="Top" Width="270" FontSize="28" IsEnabled="False" HorizontalContentAlignment="Right" TextChanged="tbCalc_Display_TextChanged"/>
+            VerticalAlignment="Top" Width="270" FontSize="28" IsEnabled="False" HorizontalContentAlignment="Right" Background="#FFB9E5ED" Height="39"/>
 
 
     </Grid>
