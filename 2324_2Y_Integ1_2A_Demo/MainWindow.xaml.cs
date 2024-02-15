@@ -186,8 +186,6 @@ namespace _2324_2Y_Integ1_2A_Demo
                 ope = -1;
                 num2 = 0;
             }
-
-
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
